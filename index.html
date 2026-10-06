@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Don't show this page in search engines -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Your Name | Contact</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .description {
+            color: #999;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            min-height: 54px;
+
+            border: 1px solid #333;
+            border-radius: 14px;
+
+            color: white;
+            text-decoration: none;
+
+            font-size: 16px;
+            font-weight: 500;
+
+            background: #111;
+
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #1c1c1c;
+            border-color: #555;
+            transform: translateY(-1px);
+        }
+
+        .save {
+            background: white;
+            color: black;
+            border-color: white;
+            margin-bottom: 8px;
+        }
+
+        .save:hover {
+            background: #ddd;
+            border-color: #ddd;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #555;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="card">
+
+        <!-- Replace profile.jpg with your photo -->
+        <img src="profile.jpg" alt="Your Name" class="profile">
+
+        <h1 class="name">Your Name</h1>
+
+        <p class="description">
+            Your profession / company
+        </p>
+
+        <div class="buttons">
+
+            <!-- Save contact -->
+            <a class="button save"
+               href="contact.vcf">
+                Save Contact
+            </a>
+
+            <!-- Phone -->
+            <a class="button"
+               href="tel:+38344123456">
+                Call Me
+            </a>
+
+            <!-- WhatsApp -->
+            <a class="button"
+               href="https://wa.me/38344123456">
+                WhatsApp
+            </a>
+
+            <!-- Instagram -->
+            <a class="button"
+               href="https://instagram.com/yourusername">
+                Instagram
+            </a>
+
+            <!-- Facebook -->
+            <a class="button"
+               href="https://facebook.com/yourusername">
+                Facebook
+            </a>
+
+            <!-- LinkedIn -->
+            <a class="button"
+               href="https://linkedin.com/in/yourusername">
+                LinkedIn
+            </a>
+
+            <!-- Email -->
+            <a class="button"
+               href="mailto:you@example.com">
+                Email
+            </a>
+
+        </div>
+
+        <p class="footer">
+            Tap • Connect • Save
+        </p>
+
+    </main>
+
+</body>
+</html>
